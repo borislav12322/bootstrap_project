@@ -1,0 +1,13 @@
+@import './sections/_header';
+@import './sections/_home';
+@import './sections/_partners';
+@import './sections/describtion';
+
+.title--bold {
+    font-weight: 500;
+}
+
+.btn {
+    min-height: 43px;
+    height: 100%;
+}

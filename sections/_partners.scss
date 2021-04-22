@@ -1,0 +1,16 @@
+.partners {
+    padding: 58px 0px;
+    border-bottom: 1px solid #D8E3FE;
+
+
+
+    .parnters__logo {
+        fill: #D6DAE5;
+        transition: fill .5s;
+
+        &:hover {
+            fill: #5982E7;
+            transition: .5s;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import '../abstracts/mixins';
+@import '../abstracts/vars';
+
+.home {
+    background-image: url(../assets/img/home/home-gn.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: (0px, 0px);
+    position: relative;
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+    padding-top: 92px;
+
+    &__title {
+        @include title_style(10px, 500, 12px, $colorTitle);
+        text-align: center;
+    }
+
+    &__sub-title {
+        @include title_style(48px, 300, 60px, $colorTitle);
+        max-width: 583px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__text {
+        @include title_style(15px, 400, 29px, $colorText);
+        max-width: 450px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__btn {
+        width: 52px;
+        height: 52px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+        background-image: url(../assets/img/home/button-play-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        border-radius: 50px;
+
+
+    }
+
+
+}

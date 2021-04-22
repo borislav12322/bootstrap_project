@@ -1,0 +1,25 @@
+@import '../abstracts/mixins';
+@import '../abstracts/vars';
+
+.describtion{
+    padding: 208px 0px 216px 0px;
+    background-image: url(../assets/img/description/describtion-bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center right;
+    .describtion__title{
+        @include title_style(10px, 500, 12px, $colorTitle);
+    }
+
+    .describtion__sub-title{
+        @include title_style(36px, 500, 45px, $colorTitle);
+    }
+
+    .describtion__text{
+        font-family: 'Roboto';
+        @include title_style(12px, 400, 28px, #8D96BD);
+        max-width: 413px;
+        width: 100%;
+    }
+
+}
