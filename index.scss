@@ -1,7 +1,8 @@
 @import './sections/_header';
 @import './sections/_home';
 @import './sections/_partners';
-@import './sections/describtion';
+@import './sections/_describtion';
+@import './sections/_about';
 
 .title--bold {
     font-weight: 500;
@@ -10,4 +11,7 @@
 .btn {
     min-height: 43px;
     height: 100%;
+    border-radius: 2px;
+    border: none;
+    font-family: 'Quicksand';
 }
