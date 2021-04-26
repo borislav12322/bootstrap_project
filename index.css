@@ -223,6 +223,106 @@
   width: 100%;
 }
 
+.statistics__left-col {
+  background: -o-linear-gradient(220.68deg, #6888FF 12.77%, #5E80FF 73.11%);
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  width: 100%;
+}
+
+.statistics__right-col {
+  background: -o-linear-gradient(348.52deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  width: 100%;
+}
+
+.planning {
+  background: #F5F8FF;
+}
+
+.planning .carousel-control-next-icon {
+  background-image: url(../assets/img/resources/next-btn-slide.svg);
+}
+
+.planning .carousel-control-prev-icon {
+  background-image: url(../assets/img/resources/prev-btn-slide.svg);
+}
+
+.planning .carousel {
+  position: relative;
+}
+
+.planning .carousel .carousel-indicators {
+  position: absolute;
+  top: 500px;
+}
+
+@media screen and (min-width: 576px) {
+  .planning .carousel .carousel-indicators {
+    top: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .planning .carousel .carousel-indicators {
+    top: 350px;
+  }
+}
+
+.planning .carousel .carousel-indicators li {
+  background-color: #5283FF;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.planning .carousel .slider__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 269px 127px;
+      grid-template-columns: 269px 127px;
+  grid-auto-rows: 127px 127px;
+  gap: 13px;
+  position: relative;
+  margin: auto 0;
+}
+
+.planning .carousel .slider__inner .slide__img {
+  border-radius: 5px;
+}
+
+.planning .carousel .slider__inner .slide__img:first-child {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/3/2;
+}
+
+.planning .carousel .slider__inner .slide__img:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+}
+
+.planning .carousel .slider__inner .slide__img:last-child {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+.planning .carousel .slider__inner .slider__content {
+  font-size: 36px;
+}
+
+.planning .slider__content .slider__text {
+  max-width: 408px;
+  width: 100%;
+}
+
 .title--bold {
   font-weight: 500;
 }
