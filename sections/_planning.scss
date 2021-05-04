@@ -1,5 +1,7 @@
 .planning {
     background: #F5F8FF;
+    padding-top: 104px;
+    padding-bottom: 213px;
 
     .carousel-control-next-icon {
         background-image: url(../assets/img/resources/next-btn-slide.svg);
@@ -56,22 +58,6 @@
                     grid-area: 1/2/2/3;
                 }
             }
-
-            .slider__content {
-                font-size: 36px;
-
-            }
-        }
-    }
-
-    .slider__content{
-        .slider__title{
-
-        }
-
-        .slider__text{
-            max-width: 408px;
-            width: 100%;
         }
     }
 }

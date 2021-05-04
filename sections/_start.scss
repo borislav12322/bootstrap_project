@@ -1,0 +1,25 @@
+.start {
+    padding: 91px 0px;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    background-image: url(../assets/img/price/price-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    .start__title {
+        font-size: 10px;
+    }
+
+    .start__subtitle {
+        font-size: 48px;
+        margin-bottom: 28px;
+    }
+
+    .start__text{
+        max-width: 712px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+}

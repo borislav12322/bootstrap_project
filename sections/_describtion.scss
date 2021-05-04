@@ -2,32 +2,40 @@
 @import '../abstracts/vars';
 
 .describtion {
-    
     background-color: #F5F8FF;
+    padding: 50px 0px 50px 0px;
+    background-image: none;
 
-    @media screen and (min-width: 682px) and (max-width: 991px) {
-        padding: 50px 0px 50px 0px;
-        background-image: url(../assets/img/description/mobile_bg.svg);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: 90% center;
+    @media screen and (min-width: 768px) {
+        background: url(../assets/img/description/mobile_bg.svg) 90% 50% no-repeat #F5F8FF;
     }
 
-    @media screen and (min-width: 1px) and (max-width: 681px) {
-        padding: 50px 0px 50px 0px;
-        background-image: none;
+    @media screen and (min-width: 850px) {
+        background: url(../assets/img/description/mobile_bg.svg) 90% 50% no-repeat,
+            url(../assets/img/description/bg-mob-second-img.png) 70% 70% no-repeat;
+        background-color: #F5F8FF;
     }
 
-    @media screen and(min-width: 992px) {
-        background-image: url(../assets/img/description/describtion-bg.svg);
+    @media screen and (min-width: 1135px) {
+        padding: 100px 0px 100px 0px;
+        background-image: url(../assets/img/description/bg-mid.png);
+        background-size: auto;
+        background-position: right -30%;
+    }
+
+
+    @media screen and(min-width: 1296px) {
+        background-image: url(../assets/img/description/bg-plan.png);
         background-repeat: no-repeat;
         background-size: auto;
-        background-position: center right;
+        background-position: right 210%;
         padding: 208px 0px 216px 0px;
     }
 
     .describtion__title {
         @include title_style(10px, 500, 12px, $colorTitle);
+        font-family: 'Roboto';
+        letter-spacing: 10%;
     }
 
     .describtion__sub-title {
@@ -38,7 +46,7 @@
 
     .describtion__text {
         font-family: 'Roboto';
-        @include title_style(12px, 400, 28px, #8D96BD);
+        @include text_style(12px, 400, 28px, #8D96BD);
         max-width: 413px;
         width: 100%;
     }
@@ -50,11 +58,28 @@
             background-color: #4C85FF;
             box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
             color: #FFFFFF;
-            font-size: 13px;
             padding: 0 37px 0 25px;
             background-image: url(../assets/img/description/play-button.svg);
             background-repeat: no-repeat;
-            background-position: 100px 50%;
+            background-position: 110px 50%;
+            font-weight: 700;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+
+        }
+
+        .describton__btn-more {
+            border: 1px solid #D1D1E4;
+            background-color: #F5F8FF;
+            padding: 0 21px;
+            font-weight: 500;
+            color: #ADB4D2;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
         }
     }
 

@@ -3,11 +3,23 @@
     border-bottom: 1px solid #D8E3FE;
     border-top: 1px solid #D8E3FE;
 
+    .logos__wrapper {
+
+        margin: 0 -15px !important;
+
+        .partners__img {
+            flex-basis: 20%;
+            text-align: center;
+            margin: 0 15px;
+        }
+    }
+
 
 
     .parnters__logo {
         fill: #D6DAE5;
         transition: fill .5s;
+
 
         &:hover {
             fill: #5982E7;

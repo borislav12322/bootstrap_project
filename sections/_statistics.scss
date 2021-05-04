@@ -1,10 +1,54 @@
-.statistics__left-col {
-    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-    width: 100%;
-    
-}
+@import '../abstracts/mixins';
+@import '../abstracts/vars';
 
-.statistics__right-col{
-    background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
-    width: 100%;
+.statistics {
+
+
+    .statistics__container {
+        .statistics__left-col {
+            background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+            width: 100%;
+            padding: 66px 90px 66px 0px;
+            .statistics__img{
+                margin-bottom: 24px;
+            }
+            .statistics__title{
+                margin-bottom: 27px;
+                @include text_style(48px, 400, 83px, #FFFFFF);
+                font-family: 'Quicksand';
+                letter-spacing: 3%;
+            }
+            .statistics__text{
+                @include text_style(18px, 500, 23px, #FFFFFF);
+                font-family: 'Quicksand';
+                max-width: 260px;
+                text-align: right;
+                letter-spacing: 3%;
+            }
+
+
+        }
+
+        .statistics__right-col {
+            background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+            width: 100%;
+            padding: 66px 0px 66px 90px;
+            .statistics__img{
+                margin-bottom: 27px;
+            }
+            .statistics__title{
+                margin-bottom: 27px;
+                @include text_style(48px, 400, 83px, #5E80FF);
+                font-family: 'Quicksand';
+                letter-spacing: 3%;
+            }
+            .statistics__text{
+                @include text_style(18px, 500, 23px, #5E80FF);
+                font-family: 'Quicksand';
+                max-width: 260px;
+                text-align: left;
+                letter-spacing: 3%;
+            }
+        }
+    }
 }

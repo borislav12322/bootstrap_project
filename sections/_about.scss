@@ -34,4 +34,44 @@
         max-width: 140px;
         width: 100%;
     }
-}
+
+    .about__btns-inner{
+        display: flex;
+        align-items: center;
+        margin-top: 92px;
+
+        .about__btn-more{
+            @include text_style(13px, 700, 16px, #D43F3F);
+            background-color: #FFD7D7;
+        }
+
+        .about__btn-text{
+            margin: 0px 48px;
+            @include text_style(11px, 600, 19px, #ADB3CB);
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                border: 1px solid #DAE4FE;
+                width: 15px;
+                top: 50%;
+                right: 30px;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                border: 1px solid #DAE4FE;
+                width: 15px;
+                top: 50%;
+                left: 30px;
+            }
+        }
+        }
+
+        .about__btn-start{
+            @include text_style(13px, 700, 16px, #3A79FF);
+            background-color: #D2E1FF;
+        }
+    }

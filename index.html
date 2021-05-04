@@ -110,33 +110,33 @@
 
     <section class="partners">
         <div class="container">
-            <div class="row d-flex flex-column flex-sm-row align-items-center justify-content-center">
+            <div class="row d-flex flex-column flex-sm-row align-items-center justify-content-center logos__wrapper">
 
-                <div class=" col-sm-4 col-md-2 d-flex justify-content-center">
+                <div class="partners__img">
                     <svg class="parnters__logo" width="116.59" height="29">
                         <use x="0" y="0" xlink:href="./assets/img/partners/BitBucket.svg#bit-bucket" />
                     </svg>
                 </div>
 
-                <div class="col-sm-4 col-md-2 d-flex justify-content-center">
+                <div class="partners__img">
                     <svg class="parnters__logo" width="116.58" height="24.29">
                         <use x="0" y="0" xlink:href="./assets/img/partners/apple-watch.svg#apple-watch" />
                     </svg>
                 </div>
 
-                <div class="col-sm-4 col-md-2 d-flex justify-content-center">
+                <div class="partners__img">
                     <svg class="parnters__logo" width="116.58" height="24.29">
                         <use x="0" y="0" xlink:href="./assets/img/partners/FB.svg#facebook" />
                     </svg>
                 </div>
 
-                <div class=" col-sm-6 col-md-2 d-flex justify-content-center">
+                <div class="partners__img">
                     <svg class="parnters__logo" width="116.58" height="24.29">
                         <use x="0" y="0" xlink:href="./assets/img/partners/atlassian.svg#atlassian" />
                     </svg>
                 </div>
 
-                <div class=" col-sm-6 col-md-2 d-flex justify-content-center">
+                <div class="partners__img">
                     <svg class="parnters__logo" width="116.58" height="28.94">
                         <use x="0" y="0" xlink:href="./assets/img/partners/audi.svg#audi" />
                     </svg>
@@ -159,7 +159,7 @@
                     <p class="describtion__text">
                         Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
                         gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis
-                        mollis oporteat. Eum an expetenda <br> consequat.
+                        mollis oporteat. Eum an expetenda consequat.
                     </p>
 
                     <div class="describtion__buttons-inner">
@@ -229,28 +229,32 @@
 
             <div class="row">
                 <div class="col d-flex justify-content-center align-items-center">
-                    <button class="about__btn-more btn">Read more</button>
-                    <span class="about__btn-text">OR</span>
-                    <button class="about__btn-more btn">Get started</button>
+                    <div class="about__btns-inner">
+                        <button class="about__btn-more btn">Read more</button>
+                        <span class="about__btn-text">OR</span>
+                        <button class="about__btn-start btn">Get started</button>
+                    </div>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
 
     <section class="statistics">
         <div class="container-fluid">
             <div class="row">
-                <div class="col d-flex flex-column flex-md-row justify-content-between p-0">
-                    <div class="statistics__left-col">
-                        <img src="./assets/img/statistic/rating.svg" alt="statistic">
-                        <h2 class="statistics__title title--white">89%</h2>
-                        <p class="statistics__text">Customers who have increased their productivity</p>
-                    </div>
+                <div class="col p-0">
+                    <div class="statistics__container d-flex flex-column justify-content-center flex-md-row">
+                        <div class="statistics__left-col d-flex flex-column align-items-end justify-content-center">
+                            <img class="statistics__img" src="./assets/img/statistic/rating.svg" alt="statistic">
+                            <h2 class="statistics__title title--white">89%</h2>
+                            <p class="statistics__text">Customers who have increased their productivity</p>
+                        </div>
 
-                    <div class="statistics__right-col">
-                        <img src="./assets/img/statistic/users-count.svg" alt="statistic">
-                        <h2 class="statistics__title title--white">3123</h2>
-                        <p class="statistics__text">Users who have used our application</p>
+                        <div class="statistics__right-col d-flex flex-column align-items-start">
+                            <img class="statistics__img" src="./assets/img/statistic/users-count.svg" alt="statistic">
+                            <h2 class="statistics__title text--blue">3123</h2>
+                            <p class="statistics__text text--blue">Users who have used our application</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -259,85 +263,201 @@
 
     <section class="planning">
         <div class="container">
+            
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="row d-flex flex-column flex-md-row align-items-center justify-content-center">
+                <div class="col-4 offset-1">
+                    <h2 class="testimonials__title">TESTIMONIALS</h2>
+                    <h3 class="testimonials__subtitle">Customers's quotes</h3>
+                    <p class="testimonials__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+                        atqui laudem an.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="help">
+        <div class="container">
             <div class="row">
-                <div class="col">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner d-flex ">
-                            <div class="carousel-item active d-flex align-items-center justify-content-center flex-column flex-md-row">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="help__title">Customer help</h2>
+                    <h2 class="help__subtitle">Frequently asked questions</h2>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Reque insolens in vel?
+                                    </button>
+                                </h5>
+                            </div>
 
-                                <div class="slider__inner justify-content-center ">
-                                    <img src="./assets/img/resources/work_table.jfif" class="slide__img d-block w-100"
-                                        alt="notebook" width="267" height="267">
-                                    <img src="./assets/img/resources/people.jfif" alt=""
-                                        class="slide__img d-block w-100" width="126" height="126">
-                                    <img src="./assets/img/resources/breakfest.jfif" alt=""
-                                        class="slide__img d-block w-100" width="126" height="126">
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="accordion__card-inner">
+                                        <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
+                                            voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel
+                                            diceret persecuti.</p>
+                                        <button class="btn">Go to documentation</button>
+                                    </div>
+
                                 </div>
-
-                                <div class="slider__content d-flex flex-column ">
-                                    <h2 class="slider__title">
-                                        How to start planning
-                                    </h2>
-                                    <p class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut
-                                        nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                                        Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro
-                                        at, eos ut decore ...
-                                    </p>
-                                    <div class="buttons__inner">
-                                        <button>Read now</button>
-                                        <button>Add to your bookmarks</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Vis rebum error graecis ea, id sit postea accusamus?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="accordion__card-inner">
+                                        <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
+                                            voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel
+                                            diceret persecuti.</p>
+                                        <button class="btn">Go to documentation</button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Lorem repudiandae ne nec?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="accordion__card-inner">
+                                            <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
+                                                voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in
+                                                mel diceret persecuti.</p>
+                                            <button class="btn">Go to documentation</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                Ad dicit numquam vel. Et eos iudico feugait percipitur?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="accordion__card-inner">
+                                                <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
+                                                    voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an,
+                                                    in mel diceret persecuti.</p>
+                                                <button class="btn">Go to documentation</button>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <!-- <div class="carousel-item">
-                                <div class="slider__inner w-100"> 
-                                    <img src="./assets/img/resources/work_table.jfif" class="slide__img d-block w-100" alt="notebook"
-                                    width="267"
-                                    height="267">
-                                    <img src="./assets/img/resources/people.jfif" alt="" class="slide__img d-block w-100"
-                                    width="126"
-                                    height="126">
-                                    <img src="./assets/img/resources/breakfest.jfif" alt="" class="slide__img d-block w-100"
-                                    width="126"
-                                    height="126">
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseFive"
+                                                    aria-expanded="false" aria-controls="collapseFive">
+                                                    Sea no dico percipitur. Fierent constituam definitiones id eum?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="accordion__card-inner">
+                                                    <p class="help__accordon-text">Quidam vocibus eum ne, erat
+                                                        consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
+                                                        tractatos ius an, in mel diceret persecuti.</p>
+                                                    <button>Go to documentation</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="slider__inner w-100"> 
-                                    <img src="./assets/img/resources/work_table.jfif" class="slide__img d-block w-100" alt="notebook"
-                                    width="267"
-                                    height="267">
-                                    <img src="./assets/img/resources/people.jfif" alt="" class="slide__img d-block w-100"
-                                    width="126"
-                                    height="126">
-                                    <img src="./assets/img/resources/breakfest.jfif" alt="" class="slide__img d-block w-100"
-                                    width="126"
-                                    height="126">
-                                </div>
-                            </div> -->
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="start">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="start__title">PLAN YOUR LIFE</h2>
+                    <h3 class="start__subtitle">
+                        Get started now
+                    </h3>
+                    <p class="start__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
+                        laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+                    <div class="start__btns-inner d-flex">
+                        <button class="btn">View pricing</button>
+                        <button class="btn">Read documentation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex align-items-center">
+                    <div class="contact__content">
+                        <h2 class="contanct__title">Sign up for newsletter</h2>
+                        <p class="contact__text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
+                            alterum.</p>
+                    </div>
+
+                    <div class="contact__form">
+                        <input type="text">
+                        <button>Save me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <cite>Copyright © 2018 by Random site
+                    </cite>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

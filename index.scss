@@ -5,6 +5,10 @@
 @import './sections/_about';
 @import './sections/_statistics';
 @import './sections/_planning';
+@import './sections/_testimonials';
+@import './sections/_help';
+@import './sections/_start';
+@import './sections/_contact';
 
 .title--bold {
     font-weight: 500;
@@ -15,5 +19,7 @@
     height: 100%;
     border-radius: 2px;
     border: none;
+    line-height: 16px;
     font-family: 'Quicksand';
+    font-size: 13px;
 }
