@@ -379,6 +379,28 @@
                         atqui laudem an.</p>
                 </div>
 
+                <div class="col">
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="testimonials__slide-text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+
+                                </p>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -405,7 +427,7 @@
                                 </h5>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class="accordion__card-inner">
@@ -518,13 +540,13 @@
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                     <h2 class="start__title">PLAN YOUR LIFE</h2>
                     <h3 class="start__subtitle">
-                        Get started now
+                        Get <span class="start__subtitle-text">started</span> now
                     </h3>
                     <p class="start__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
                         laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
                     <div class="start__btns-inner d-flex">
-                        <button class="btn">View pricing</button>
-                        <button class="btn">Read documentation</button>
+                        <button class="start__view-btn btn">View pricing</button>
+                        <button class="start__read-btn btn">Read documentation</button>
                     </div>
                 </div>
             </div>
@@ -534,16 +556,18 @@
     <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col d-flex align-items-center">
-                    <div class="contact__content">
-                        <h2 class="contanct__title">Sign up for newsletter</h2>
+                <div class="col offset-1 d-flex align-items-center">
+                    <div class="contact__content d-flex flex-column">
+                        <h2 class="contact__title">
+                            Sign up for newsletter
+                        </h2>
                         <p class="contact__text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
                             alterum.</p>
                     </div>
 
-                    <div class="contact__form">
-                        <input type="text">
-                        <button>Save me</button>
+                    <div class="contact__form d-flex align-items-center">
+                        <input class="contact__input" type="email" placeholder="Email address">
+                        <button class="contact__btn">Save me</button>
                     </div>
                 </div>
             </div>
@@ -554,7 +578,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <cite>Copyright © 2018 by Random site
+                    <cite>
+                        Copyright © 2018 by Random site
                     </cite>
                 </div>
             </div>
@@ -598,12 +623,27 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             cssMode: true,
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             pagination: {
                 el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        var swiper = new SwiperSecond(".mySecondSwiper", {
+            cssMode: true,
+            loop: true,
+            navigation: {
+                nextEl: ".second-swiper-button-next",
+                prevEl: ".second-swiper-button-prev",
+            },
+            pagination: {
+                el: ".second-swiper-pagination",
             },
             mousewheel: true,
             keyboard: true,

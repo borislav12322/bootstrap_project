@@ -1,25 +1,62 @@
+@import '../abstracts/vars';
+@import '../abstracts/mixins';
+
+
 .start {
     padding: 91px 0px;
-    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-    background-image: url(../assets/img/price/price-bg.svg);
+    background:
+    url(../assets/img/price/start_bg_first_clouds.svg),
+    url(../assets/img/price/start_bg_second_clouds.svg) right,
+    linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%); 
     background-repeat: no-repeat;
     background-size: contain;
 
 
     .start__title {
-        font-size: 10px;
+        @include text_style(10px, 500, 12px, #FFFFFF);
+        font-family: 'Roboto';
     }
 
     .start__subtitle {
-        font-size: 48px;
+        @include text_style(48px, 400, 60px, #FFFFFF);
+        font-family: 'Quicksand';
         margin-bottom: 28px;
+
+        &-text{
+            @include text_style(48px, 500, 60px, #FFFFFF);
+        }
     }
 
     .start__text{
-        max-width: 712px;
+        @include text_style(15px, 400, 29px, #FFFFFF);
+        font-family: 'Roboto';
+        max-width: 680px;
         width: 100%;
         text-align: center;
         margin-bottom: 28px;
+    }
+
+    .start__btns-inner{
+
+
+        .start__view-btn{
+            @include text_style(13px, 700, 16px, #565F82);
+            background: #FFFFFF;
+            box-shadow: 0px 5px 15px #6480E8;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+
+        .start__read-btn{
+            @include text_style(13px, 700, 16px, #C7D3FF);
+            border: 1px solid #A0B4FF;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
     }
 
 }
