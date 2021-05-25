@@ -1,24 +1,14 @@
 // _header.scss
 
-.navbar-collapse {
-    justify-content: space-between;
+.header {
 
-    .social {
+    .navbar-collapse {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
 
-        &__list {
-            display: flex;
-            margin-bottom: 0;
-            margin-right: 44px;
-
-            .social__item {
-                margin-right: 38px;
-
-                &:last-child {
-                    margin-right: 0px;
-                }
-            }
+        .navbar-light .navbar-nav .nav-link.active {
+            $navbar-light-active-color:red;
+            color: $navbar-light-active-color;
         }
     }
 }

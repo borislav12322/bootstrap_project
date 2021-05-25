@@ -28,28 +28,30 @@
     <!-- Fonts -->
 
     <!-- BootStrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- SwiperJS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/img/header/logo.svg" alt="" class="header__img">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/header/logo.svg" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -65,526 +67,277 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Documentation</a>
                         </li>
+
                     </ul>
-                    <div class="header__social social">
-                        <ul class="social__list">
-                            <li class="social__item">
-                                <a href="" class="social__link">
-                                    <img src="./assets/img/social__list/fb.svg" alt="" class="social__img">
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a href="" class="social__link">
-                                    <img src="./assets/img/social__list/twitter.svg" alt="" class="social__img"></a>
-                            </li>
-                            <li class="social__item">
-                                <a href="" class="social__link">
-                                    <img src="./assets/img/social__list/Telegram_logo.svg" alt="" class="social__img">
-                                </a></li>
-                            <li class="social__item">
-                                <a href="" class="social__link">
-                                    <img src="./assets/img/social__list/m.svg" alt="" class="social__img">
-                                </a>
-                            </li>
-                        </ul>
-                        <button>Get started</button>
-                    </div>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <img src="./assets/img/header/facebook.svg" alt="facebook" class="header__img">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <img src="./assets/img/header/telegram_logo.svg" alt="facebook" class="header__img">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <img src="./assets/img/header/tweeter_logo.svg" alt="facebook" class="header__img">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <img src="./assets/img/header/modo_logo.svg" alt="facebook" class="header__img">
+                            </a>
+                        </li>
+
+                        <button class="header__btn btn">
+                            Get started
+                        </button>
+                    </ul>
                 </div>
             </div>
         </nav>
+
     </header>
 
-    <section class="home">
-        <div class="container d-flex flex-column justify-content-center align-items-center ">
-
-            <h2 class="home__title">
-                PLAN YOUR LIFE
-            </h2>
-
-            <h2 class="home__sub-title">
-                Increase your <span class="title--bold">productivity</span>
-            </h2>
-
-            <p class="home__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
-                insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
-
-            <button class="home__btn"></button>
-        </div>
-    </section>
-
     <section class="partners">
-        <div class="container">
-            <div class="row d-flex flex-column flex-sm-row align-items-center justify-content-center logos__wrapper">
+        <div class="container overflow-hidden d-flex justify-content-center">
+            <div class="partners__wrapper">
+                <div class="row d-flex flex-column justify-content-between flex-sm-row gy-5">
 
-                <div class="partners__img">
-                    <svg class="parnters__logo" width="116.59" height="29">
-                        <use x="0" y="0" xlink:href="./assets/img/partners/BitBucket.svg#bit-bucket" />
-                    </svg>
+                    <div class="col col-xxl-2 d-flex justify-content-center">
+                        <div class="partners__img">
+                            <svg class="parnters__logo" width="116.59" height="29">
+                                <use x="0" y="0" xlink:href="./assets/img/partners/BitBucket.svg#bit-bucket" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col col-xxl-2 d-flex justify-content-center">
+                        <div class="partners__img">
+                            <svg class="parnters__logo" width="116.58" height="24.29">
+                                <use x="0" y="0" xlink:href="./assets/img/partners/apple-watch.svg#apple-watch" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col col-xxl-2 d-flex justify-content-center">
+                        <div class="partners__img">
+                            <svg class="parnters__logo" width="116.58" height="24.29">
+                                <use x="0" y="0" xlink:href="./assets/img/partners/FB.svg#facebook" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col col-xxl-2 d-flex justify-content-center">
+                        <div class="partners__img">
+                            <svg class="parnters__logo" width="116.58" height="24.29">
+                                <use x="0" y="0" xlink:href="./assets/img/partners/atlassian.svg#atlassian" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col col-xxl-2 d-flex justify-content-center">
+                        <div class="partners__img">
+                            <svg class="parnters__logo" width="116.58" height="28.94">
+                                <use x="0" y="0" xlink:href="./assets/img/partners/audi.svg#audi" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="partners__img">
-                    <svg class="parnters__logo" width="116.58" height="24.29">
-                        <use x="0" y="0" xlink:href="./assets/img/partners/apple-watch.svg#apple-watch" />
-                    </svg>
-                </div>
-
-                <div class="partners__img">
-                    <svg class="parnters__logo" width="116.58" height="24.29">
-                        <use x="0" y="0" xlink:href="./assets/img/partners/FB.svg#facebook" />
-                    </svg>
-                </div>
-
-                <div class="partners__img">
-                    <svg class="parnters__logo" width="116.58" height="24.29">
-                        <use x="0" y="0" xlink:href="./assets/img/partners/atlassian.svg#atlassian" />
-                    </svg>
-                </div>
-
-                <div class="partners__img">
-                    <svg class="parnters__logo" width="116.58" height="28.94">
-                        <use x="0" y="0" xlink:href="./assets/img/partners/audi.svg#audi" />
-                    </svg>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section class="describtion">
+    <section class="description">
         <div class="container">
-            <div class="row d-flex justify-content-center justify-content-md-start">
-                <div class="col-xl-5 offset-xl-1 d-flex flex-column">
-                    <h2 class="describtion__title">
+            <div class="row">
+
+                <div class="col offset-1">
+                    <h2 class="description__title">
                         DESKTOP AND MOBILE APP
                     </h2>
-                    <h3 class="describtion__sub-title">
-                        Plan and manage
+
+                    <h3 class="description__subtitle">
+                        <span class="description__subtitle--bold">
+                            Plan
+                        </span>
+                        and
+                        <span class="description__subtitle--bold">
+                            manage
+                        </span>
                     </h3>
-                    <p class="describtion__text">
+
+                    <p class="description__text">
                         Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
                         gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis
                         mollis oporteat. Eum an expetenda consequat.
                     </p>
 
-                    <div class="describtion__buttons-inner">
-                        <button class="describton__btn-video btn">View video
+                    <div class="description__inner">
+                        <button class="description__btn-view btn">
+                            View video
                         </button>
-                        <button class="describton__btn-more btn">See features</button>
+                        <button class="description__btn-see btn">
+                            See features
+                        </button>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
+        <div class="container about__container">
+            <div class="row d-flex">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
                     <h2 class="about__title">
                         ABOUT US
                     </h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col d-flex justify-content-center">
                     <h3 class="about__subtitle">
                         Read about our app
                     </h3>
                 </div>
             </div>
-
-            <div class="row d-flex justify-content-center align-items-start">
-                <div class="col-md-2 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-
-                    <img src="./assets/img/about/overview-icon.svg" alt="" class="about__icon">
-                    <h2 class="about__column-title">Overview</h2>
-                    <p class="about__column__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
-                    </p>
-
-                </div>
-
-                <div class="col-md-2 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-
-                    <img src="./assets/img/about/files-icon.svg" alt="" class="about__icon">
-                    <h2 class="about__column-title">Files</h2>
-                    <p class="about__column__text">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum
-                        conceptam ex has.</p>
-
-                </div>
-
-                <div class="col-md-2 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-
-                    <img src="./assets/img/about/chats-icon.svg" alt="" class="about__icon">
-                    <h2 class="about__column-title">Meeting chats</h2>
-                    <p class="about__column__text">Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
-
-                </div>
-
-                <div class="col-md-2 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-
-                    <img src="./assets/img/about/save-icon.svg" alt="" class="about__icon">
-                    <h2 class="about__column-title">Save events</h2>
-                    <p class="about__column__text">Nisl idque mel ea, nominati voluptatum.
+            <div class="row d-flex flex-column flex-sm-row align-items-start">
+                <div class="col d-flex flex-column align-items-center justify-content-center features__container">
+                    <img src="./assets/img/about/overview-icon.svg" alt="arrow" class="about__img">
+                    <h4 class="about__mini-title">
+                        Overview
+                    </h4>
+                    <p class="about__text">
+                        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
                     </p>
                 </div>
-
+                <div class="col d-flex flex-column align-items-center justify-content-center features__container">
+                    <img src="./assets/img/about/files-icon.svg" alt="files" class="about__img">
+                    <h4 class="about__mini-title">
+                        Files
+                    </h4>
+                    <p class="about__text">
+                        No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.
+                    </p>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center
+                features__container">
+                    <img src="./assets/img/about/chats-icon.svg" alt="chat" class="about__img">
+                    <h4 class="about__mini-title">
+                        Meeting chats
+                    </h4>
+                    <p class="about__text">
+                        Vim ne tacimates neglegentur. Erat diceret omittam at est.
+                    </p>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/img/about/save-icon.svg" alt="save" class="about__img">
+                    <h4 class="about__mini-title">
+                        Save events
+                    </h4>
+                    <p class="about__text">
+                        Nisl idque mel ea, nominati voluptatum.
+                    </p>
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <div class="about__btns-inner">
-                        <button class="about__btn-more btn">Read more</button>
-                        <span class="about__btn-text">OR</span>
-                        <button class="about__btn-start btn">Get started</button>
-                    </div>
+            <div class="row d-flex justify-content-center about__inner">
+                <div
+                    class="col d-flex flex-column flex-sm-row justify-content-between align-items-center buttons-container">
+                    <button class="about__btn-read btn">
+                        Read more
+                    </button>
+                    <span class="about__word">
+                        OR
+                    </span>
+                    <button class="about__btn-start btn">
+                        Get started
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="statistics">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col p-0">
-                    <div class="statistics__container d-flex flex-column justify-content-center flex-md-row">
-                        <div class="statistics__left-col d-flex flex-column align-items-end justify-content-center">
-                            <img class="statistics__img" src="./assets/img/statistic/rating.svg" alt="statistic">
-                            <h2 class="statistics__title title--white">89%</h2>
-                            <p class="statistics__text">Customers who have increased their productivity</p>
-                        </div>
-
-                        <div class="statistics__right-col d-flex flex-column align-items-start">
-                            <img class="statistics__img" src="./assets/img/statistic/users-count.svg" alt="statistic">
-                            <h2 class="statistics__title text--blue">3123</h2>
-                            <p class="statistics__text text--blue">Users who have used our application</p>
-                        </div>
+        <div class="container-fluid ">
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col bg-blue d-flex justify-content-end">
+                    <div class="statistics__inner-left d-flex justify-content-end flex-column align-items-end">
+                        <img src="./assets/img/statistic/rating.svg" alt="count" class="statistics__img">
+                        <h2 class="statistics__title-left">
+                            89%
+                        </h2>
+                        <p class="statistics__text-left">
+                            Customers who have increased their productivity
+                        </p>
+                    </div>
+                </div>
+                <div class="col bg-grey d-flex justify-content-start">
+                    <div class="statistics__inner-right d-flex justify-content-start flex-column align-items-start">
+                        <img src="./assets/img/statistic/users-count.svg" alt="count" class="statistics__img">
+                        <h2 class="statistics__title-right">
+                            3123
+                        </h2>
+                        <p class="statistics__text-right">
+                            Users who have used our application
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <section class="planning">
+    <section class="resources">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="column d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="planning__title">OUR RESOURCES</h2>
-                    <h3 class="planning__subtitle">Start reading our blog</h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide__planning-imgs-inner">
-                                    <img src="./assets/img/resources/work-table.svg" alt="table"
-                                        class="slide_planning-img">
-                                    <img src="./assets/img/resources/notebook.svg" alt="" class="slide_planning-img">
-                                    <img src="./assets/img/resources/man.svg" alt="" class="slide_planning-img">
-                                </div>
-                                <div class="slide__planning-content d-flex flex-column align-items-start">
-                                    <h2 class="slide__planning-title">
-                                        How to start planning
-                                    </h2>
-                                    <p class="slide__planning-text">
-                                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-                                        tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium
-                                        principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut
-                                        decore ...
-                                    </p>
-                                    <div class="slide__btns-inner d-flex">
-                                        <button class="slide__btn-now btn">
-                                            Read now
-                                        </button>
-                                        <button class="slide__btn-add btn">
-                                            Add to your bookmarks
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide__planning-imgs-inner">
-                                    <img src="./assets/img/resources/work-table.svg" alt="table"
-                                        class="slide_planning-img">
-                                    <img src="./assets/img/resources/notebook.svg" alt="" class="slide_planning-img">
-                                    <img src="./assets/img/resources/man.svg" alt="" class="slide_planning-img">
-                                </div>
-                                <div class="slide__planning-content d-flex flex-column align-items-start">
-                                    <h2 class="slide__planning-title">
-                                        How to start planning
-                                    </h2>
-                                    <p class="slide__planning-text">
-                                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-                                        tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium
-                                        principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut
-                                        decore ...
-                                    </p>
-                                    <div class="slide__btns-inner d-flex">
-                                        <button class="slide__btn-now btn">
-                                            Read now
-                                        </button>
-                                        <button class="slide__btn-add btn">
-                                            Add to your bookmarks
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide__planning-imgs-inner">
-                                    <img src="./assets/img/resources/work-table.svg" alt="table"
-                                        class="slide_planning-img">
-                                    <img src="./assets/img/resources/notebook.svg" alt="" class="slide_planning-img">
-                                    <img src="./assets/img/resources/man.svg" alt="" class="slide_planning-img">
-                                </div>
-                                <div class="slide__planning-content d-flex flex-column align-items-start">
-                                    <h2 class="slide__planning-title">
-                                        How to start planning
-                                    </h2>
-                                    <p class="slide__planning-text">
-                                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
-                                        tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium
-                                        principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut
-                                        decore ...
-                                    </p>
-                                    <div class="slide__btns-inner d-flex">
-                                        <button class="slide__btn-now btn">
-                                            Read now
-                                        </button>
-                                        <button class="slide__btn-add btn">
-                                            Add to your bookmarks
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <div class="row d-flex flex-column flex-md-row align-items-center justify-content-center">
-                <div class="col-4 offset-1">
-                    <h2 class="testimonials__title">TESTIMONIALS</h2>
-                    <h3 class="testimonials__subtitle">Customers's quotes</h3>
-                    <p class="testimonials__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
-                        atqui laudem an.</p>
-                </div>
-
-                <div class="col">
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <p class="testimonials__slide-text">
-                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-
-                                </p>
-                            </div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="help">
-        <div class="container">
-            <div class="row">
                 <div class="col d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="help__title">Customer help</h2>
-                    <h2 class="help__subtitle">Frequently asked questions</h2>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Reque insolens in vel?
-                                    </button>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <div class="accordion__card-inner">
-                                        <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
-                                            voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel
-                                            diceret persecuti.</p>
-                                        <button class="btn">Go to documentation</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Vis rebum error graecis ea, id sit postea accusamus?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <div class="accordion__card-inner">
-                                        <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
-                                            voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel
-                                            diceret persecuti.</p>
-                                        <button class="btn">Go to documentation</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Lorem repudiandae ne nec?
-                                        </button>
-                                    </h5>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <div class="accordion__card-inner">
-                                            <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
-                                                voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in
-                                                mel diceret persecuti.</p>
-                                            <button class="btn">Go to documentation</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingFour">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                                data-target="#collapseFour" aria-expanded="false"
-                                                aria-controls="collapseFour">
-                                                Ad dicit numquam vel. Et eos iudico feugait percipitur?
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="accordion__card-inner">
-                                                <p class="help__accordon-text">Quidam vocibus eum ne, erat consectetuer
-                                                    voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an,
-                                                    in mel diceret persecuti.</p>
-                                                <button class="btn">Go to documentation</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-header" id="headingFive">
-                                            <h5 class="mb-0">
-                                                <button class="btn btn-link collapsed" type="button"
-                                                    data-toggle="collapse" data-target="#collapseFive"
-                                                    aria-expanded="false" aria-controls="collapseFive">
-                                                    Sea no dico percipitur. Fierent constituam definitiones id eum?
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="accordion__card-inner">
-                                                    <p class="help__accordon-text">Quidam vocibus eum ne, erat
-                                                        consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero
-                                                        tractatos ius an, in mel diceret persecuti.</p>
-                                                    <button>Go to documentation</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="start">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="start__title">PLAN YOUR LIFE</h2>
-                    <h3 class="start__subtitle">
-                        Get <span class="start__subtitle-text">started</span> now
+                    <h2 class="resources__title">
+                        OUR RESOURCES
+                    </h2>
+                    <h3 class="resources__subtitle">
+                        Start reading our blog
                     </h3>
-                    <p class="start__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
-                        laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
-                    <div class="start__btns-inner d-flex">
-                        <button class="start__view-btn btn">View pricing</button>
-                        <button class="start__read-btn btn">Read documentation</button>
-                    </div>
                 </div>
+            </div>
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="slide__container d-flex flex-column align-items-center flex-lg-row justify-content-lg-center ">
+                            <div class="slide__imgs-inner">
+                                <img src="./assets/img/resources/img1.svg" alt="table" class="slide__img">
+                                <img src="./assets/img/resources/img2.svg" alt="laptop" class="slide__img">
+                                <img src="./assets/img/resources/img3.svg" alt="desk" class="slide__img">
+                            </div>
+                            <div class="slide__content d-flex flex-column">
+                                <h2 class="slide__title">
+                                    How to start planning
+                                </h2>
+                                <div class="slide__text">
+                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+
+                                </div>
+                                <div class="slide__btns-inner">
+                                    <button class="btn__read btn">Read Now</button>
+                                    <button class="btn__add btn">Add to your bookmarks</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col offset-1 d-flex align-items-center">
-                    <div class="contact__content d-flex flex-column">
-                        <h2 class="contact__title">
-                            Sign up for newsletter
-                        </h2>
-                        <p class="contact__text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
-                            alterum.</p>
-                    </div>
-
-                    <div class="contact__form d-flex align-items-center">
-                        <input class="contact__input" type="email" placeholder="Email address">
-                        <button class="contact__btn">Save me</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <cite>
-                        Copyright © 2018 by Random site
-                    </cite>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
 
@@ -609,41 +362,27 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             cssMode: true,
-            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             pagination: {
                 el: ".swiper-pagination",
-            },
-            mousewheel: true,
-            keyboard: true,
-        });
-
-        var swiper = new SwiperSecond(".mySecondSwiper", {
-            cssMode: true,
-            loop: true,
-            navigation: {
-                nextEl: ".second-swiper-button-next",
-                prevEl: ".second-swiper-button-prev",
-            },
-            pagination: {
-                el: ".second-swiper-pagination",
             },
             mousewheel: true,
             keyboard: true,
