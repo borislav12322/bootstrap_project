@@ -1,44 +1,4 @@
-@import '../abstracts/vars';
-@import '../abstracts/mixins';
+.faq{
+    padding: 176px 0;
 
-.help {
-    padding-top: 176px;
-    padding-bottom: 174px;
-
-    .help__title{
-        @include text_style(10px, 500, 12px, #3D4F9F);
-        font-family: 'Roboto';
-        letter-spacing: 10%;
-        margin-bottom: 19px;
-    }
-
-    .help__subtitle{
-        @include text_style(24px, 500, 30px, #3D4F9F);
-        font-family: 'Quicksand';
-        margin-bottom: 68px;
-    }
-
-
-    .accordion {
-        max-width: 730px;
-        width: 100%;
-
-        .card {
-            border: none;
-            
-
-            .card-header {
-                background-color: #FFFFFF;
-                border-bottom: 1px solid #D8E3FE;
-
-                .btn-link{
-                    @include text_style(15px, 500, 19px, #8E96B7);
-                    text-align: left;
-                }
-
-            }
-        }
-    }
-
-    
 }
