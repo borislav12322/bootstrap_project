@@ -1,6 +1,7 @@
 // _header.scss
 
 .header {
+    padding: 18px 0;
 
     .navbar-collapse {
         display: flex;
@@ -10,5 +11,15 @@
             $navbar-light-active-color:red;
             color: $navbar-light-active-color;
         }
+    }
+
+    &__btn.btn{
+        font-family: 'Quicksand';
+        color: #3A79FF;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        background: #D2E1FF;
+        border-radius: 2px;
     }
 }

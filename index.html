@@ -41,7 +41,7 @@
 
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/header/logo.svg" alt="logo">
                 </a>
@@ -101,6 +101,24 @@
         </nav>
 
     </header>
+
+    <section class="main">
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <h2 class="main__title">
+                    PLAN YOUR LIFE
+                </h2>
+
+                <h3 class="main__subtitle">
+                    Increase your <span class="text--bold"> productivity</span>
+                </h3>
+
+                <p class="main__text">
+                    Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <section class="partners">
         <div class="container overflow-hidden d-flex justify-content-center">
@@ -305,7 +323,7 @@
                 <div class="col position-relative">
                     <div class="swiper-container mySwiper">
                         <div class="swiper-wrapper w-100">
-                            <div class="swiper-slide d-flex justify-content-center">
+                            <div class="swiper-slide d-flex flex-column flex-lg-row align-items-center justify-content-center">
 
                                 <div class="slide__imgs-inner">
                                     <div class="imgs-box">
@@ -352,8 +370,8 @@
 
     <section class="testimonials">
         <div class="container">
-            <div class="row d-flex">
-                <div class="col-4 offset-xxl-1">
+            <div class="row d-flex align-items-center justify-content-center flex-column flex-lg-row">
+                <div class="col offset-xl-1 d-flex flex-column align-items-center justify-content-center align-items-lg-start">
                     <h2 class="testimonials__title">
                         TESTIMONIALS
                     </h2>
@@ -416,7 +434,8 @@
                                     Reque insolens in vel?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="accordion-collapse collapse
+                            show"" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body d-flex justify-content-between align-items-center">
                                     <p class="faq__text">
@@ -458,7 +477,7 @@
                                     Lorem repudiandae ne nec?
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseThree" class="accordion-collapse collapse  aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body d-flex justify-content-between align-items-center">
                                     <p class="faq__text">
@@ -555,21 +574,21 @@
 
     <section class="email">
         <div class="container">
-            <div class="row">
-                <div class="col-10 offset-1 d-flex justify-content-between align-items-center">
-                    <div class="email__content">
+            <div class="row d-flex justify-content-between">
+                <div class="col-10 offset-1 d-flex flex-column flex-lg-row align-items-center">
+                    <div class="email__content d-flex flex-column justify-content-center align-items-center align-items-lg-start w-100">
                         <h2 class="email__title">
                             Sign up for newsletter
                         </h2>
-
                         <p class="email__text">
                             Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.
                         </p>
                     </div>
 
-                    <div class="email__form">
-                        <form action="">
-                            <input type="text" class="email__input" placeholder="Email address">
+                    <div class="email__form d-flex w-100">
+                        <form action="" class="d-flex flex-column flex-lg-row align-items-center justify-content-end w-100">
+                            <input type="text" class="email__input" placeholder="Email address"
+                            title="Enter Email">
                             <button class="email__btn btn">
                                 Save me
                             </button>
@@ -580,24 +599,79 @@
         </div>
     </section>
 
+    <!-- <sectiom class="slider" style="background-color: red">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide__imgs-inner">
+                        <div class="imgs-box">
+                            <img src="./assets/img/resources/img1.svg" alt="table" class="slide__img">
+                        </div>
+                        <div class="imgs-box">
+                            <img src="./assets/img/resources/img2.svg" alt="laptop" class="slide__img">
+                        </div>
+                        <div class="imgs-box">
+                            <img src="./assets/img/resources/img3.svg" alt="desk" class="slide__img">
+                        </div>
+                    </div>
+                    <div class="slide__content d-flex flex-column">
+                        <h2 class="slide__title">
+                            How to start planning
+                        </h2>
+                        <div class="slide__text">
+                            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
+                            tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium
+                            principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut
+                            decore
+                            ...
+
+                        </div>
+                        <div class="slide__btns-inner">
+                            <button class="btn__read btn">Read Now</button>
+                            <button class="btn__add btn">Add to your bookmarks</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </sectiom> -->
+
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col w-100">
-
-
-
-                    <div class="footer__content d-flex justify-content-between">
-                        <div class="footer__left d-flex">
+                    <div class="footer__content d-flex flex-row  flex-md-column flex-lg-row justify-content-between align-items-center w-100">
+                        <div class="footer__left d-flex flex-column flex-md-row w-100">
                             <a class="navbar-brand" href="#">
                                 <img src="./assets/img/header/logo.svg" alt="logo">
                             </a>
-                            <div class="footer__info d-flex flex-column">
-                                <ul class="navbar-nav d-flex flex-row g-5">
-
-                                    <li class="nav-link">
-
-                                    </li>
+                            <div class="footer__info w-100">
+                                <ul class="navbar-nav d-flex  flex-column flex-md-row justify-content-between">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
@@ -615,15 +689,17 @@
                                     </li>
 
                                 </ul>
+
                                 <small class="footer__copyright">
                                     Copyright © 2018 by Random site
                                 </small>
+                                
                             </div>
                         </div>
 
 
-                        <div class="footer__social">
-                            <ul class="navbar-nav d-flex flex-row">
+                        <div class="footer__social d-flex flex-column flex-md-row justify-content-end align-items-center w-100">
+                            <ul class="navbar-nav d-flex flex-column flex-md-row justify-content-between">
                                 <li class="nav-item">
                                     <a href="" class="nav-link">
                                         <img src="./assets/img/header/facebook.svg" alt="facebook" class="header__img">
@@ -647,11 +723,16 @@
                                     </a>
                                 </li>
 
-                                <button class="header__btn btn">
-                                    Get started
-                                </button>
+                                
                             </ul>
+
+                            <button class="footer__btn btn">
+                                Get started
+                            </button>
                         </div>
+                        <small class="footer__copyright-md">
+                            Copyright © 2018 by Random site
+                        </small>
                     </div>
                 </div>
             </div>

@@ -1,47 +1,37 @@
-@import '../abstracts/mixins';
-@import '../abstracts/vars';
+.main{
+    padding-top: 91px;
 
-.home {
-    background-image: url(../assets/img/home/home-gn.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: (0px, 0px);
-    position: relative;
-    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
-    padding-top: 92px;
 
     &__title {
-        @include title_style(10px, 500, 12px, $colorTitle);
+        font-family: 'Roboto';
+        font-size: 10px;
+        line-height: 12px;
+        color: #3D4F9F;
+        margin-bottom: 16px;
         text-align: center;
     }
 
-    &__sub-title {
-        @include title_style(48px, 300, 60px, $colorTitle);
-        max-width: 583px;
-        width: 100%;
+    &__subtitle {
+        font-family: 'Quicksand';
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 45px;
+        color: #3D4F9F;
+        margin-bottom: 28px;
         text-align: center;
+
+        .text--bold {
+            font-weight: 500;
+        }
     }
 
     &__text {
-        @include title_style(15px, 400, 29px, $colorText);
-        max-width: 450px;
+        font-family: 'Roboto';
+        font-size: 15px;
+        line-height: 29px;
+        color: #8D96BD;
+        max-width: 502px;
         width: 100%;
         text-align: center;
     }
-
-    .home__btn {
-        width: 52px;
-        height: 52px;
-        background: #FFFFFF;
-        box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
-        background-image: url(../assets/img/home/button-play-icon.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none;
-        border-radius: 50px;
-
-
-    }
-
-
 }

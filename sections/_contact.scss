@@ -1,15 +1,73 @@
-.email{
+.email {
     background: #FCFDFF;
     border: 1px solid #D8E3FE;
     border-left: none;
     border-right: none;
     padding: 120px 0;
 
-    &__content{
+    &__title {
+        font-family: 'Quicksand';
+        font-size: 18px;
+        line-height: 22px;
+        color: #3D4F9F;
+        margin-bottom: 18px;
+        text-align: center;
+
 
     }
 
-    .collapse:not(.show){
-        display: block;
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        width: 100%;
+        color: #8D96BD;
+        text-align: center;
+
+        @media screen and (min-width: 992px) {
+            text-align: left;
+            max-width: 330px;
+        }
+
+    }
+
+    &__form {}
+
+    &__input {
+        border: none;
+        background: #EFEFF7;
+        border-radius: 5px;
+        min-height: 60px;
+        padding-left: 23px;
+        margin-bottom: 14px;
+        width: 100%;
+
+
+        @media screen and (min-width: 992px) {
+            max-width: 279px;
+            width: 100%;
+            padding-right: 0;
+            margin-right: 14px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__btn.btn {
+        background: #4D6CE1;
+        color: #FFFFFF;
+        min-height: 60px;
+        font-family: 'Quicksand';
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 0 62px;    
+        width: 100%;
+
+        @media screen and (min-width: 992px) {
+            max-width: 184px;
+        }
+
     }
 }
