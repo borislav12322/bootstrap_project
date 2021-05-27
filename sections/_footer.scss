@@ -1,16 +1,12 @@
 .footer{
     background-color: #FFFFFF;
-
+    padding: 93px 0;
     .navbar-brand{
         margin-right: 73px;
     }
-
-
     &__content{
-
         .nav-item{
             margin-right: 42px;
-
             &:last-child{
                 margin-right: 0;
             }

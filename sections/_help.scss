@@ -1,4 +1,83 @@
-.faq{
+.faq {
     padding: 176px 0;
 
+    &__title {
+        font-family: 'Roboto';
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+        color: #3D4F9F;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-family: 'Quicksand';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #3D4F9F;
+        margin-bottom: 68px;
+        text-align: center;
+
+    }
+
+
+
+    .accordion {
+        .accordion-item {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .accordion-button {
+            color: #8E96B7;
+            position: relative;
+            padding: 1rem 2.25rem;
+
+            &::after {
+                position: absolute;
+                left: -2px;
+                top: 19px;
+                background-image: url(../assets/img/faq/arrow_accordeon.svg);
+            }
+
+            &:focus {
+                border-color: transparent;
+                box-shadow: none;
+            }
+
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #495274;
+            background-color: #FFFFFF;
+        }
+
+        .accordion-button:not(.collapsed)::after {}
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        color: #8D96BD;
+        max-width: 380px;
+        width: 100%;
+        margin-left: 16px;
+    }
+
+    &__btn {
+        background: #E8ECF4;
+        border-radius: 2px;
+        border: none;
+        min-height: 43px;
+        padding: 0 14px;
+        font-family: 'Quicksand';
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #7382A3;
+    }
 }
