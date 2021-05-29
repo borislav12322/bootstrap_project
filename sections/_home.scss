@@ -1,6 +1,8 @@
 .main{
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
     padding-top: 91px;
+    padding-bottom: 212px;
+    position: relative;
 
 
     &__title {
@@ -14,9 +16,9 @@
 
     &__subtitle {
         font-family: 'Quicksand';
-        font-size: 36px;
+        font-size: 48px;
         font-weight: 300;
-        line-height: 45px;
+        line-height: 60px;
         color: #3D4F9F;
         margin-bottom: 28px;
         text-align: center;
@@ -35,6 +37,41 @@
         width: 100%;
         text-align: center;
     }
+
+    &__btn{
+        width: 52px;
+        height: 52px;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        z-index: 1000;
+
+        &:hover{
+            box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+        }
+    }
+    &__svg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .home__line{
+        
+    }
+
+    &__circle{
+        position: relative;
+        z-index: 122;
+        cursor: pointer;
+    }
+
+    #menu{
+        display: none;
+    }
+
+
 
     
 }
