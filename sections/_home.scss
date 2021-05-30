@@ -63,12 +63,18 @@
 
     &__circle{
         position: relative;
-        z-index: 122;
+        z-index: 1220000000;
+    }
+
+
+
+    #circle_one,#circle_one_bg,#circle_two,#circle_two_bg,#circle_three,#circle_three_bg{
         cursor: pointer;
     }
 
-    #menu{
-        display: none;
+    #icon_one,#icon_two,#icon_three{
+        opacity: 0;
+        transition: all .4s ease-out;
     }
 
 
