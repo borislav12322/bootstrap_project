@@ -22,7 +22,6 @@ var swiper = new Swiper(".mySwiperSecond", {
 
 });
 
-
 document.addEventListener("click", function (e) {
     let m = document.getElementById('icon_one');
     if (e.target.id != 'circle_one' && e.target.id != 'icon_one' && e.target.id != 'circle_one_bg' ) {

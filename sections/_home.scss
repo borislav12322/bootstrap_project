@@ -1,4 +1,4 @@
-.main{
+.main {
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
     padding-top: 91px;
     padding-bottom: 212px;
@@ -38,7 +38,7 @@
         text-align: center;
     }
 
-    &__btn{
+    &__btn {
         width: 52px;
         height: 52px;
         background-color: #FFFFFF;
@@ -47,37 +47,37 @@
         position: relative;
         z-index: 1000;
 
-        &:hover{
+        &:hover {
             box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
         }
     }
-    &__svg{
+
+    &__svg {
         position: absolute;
         bottom: 0;
         left: 0;
     }
 
-    .home__line{
-        
-    }
+    .home__line {}
 
-    &__circle{
+    &__circle {
         position: relative;
         z-index: 1220000000;
     }
 
-
-
-    #circle_one,#circle_one_bg,#circle_two,#circle_two_bg,#circle_three,#circle_three_bg{
+    #circle_one,
+    #circle_one_bg,
+    #circle_two,
+    #circle_two_bg,
+    #circle_three,
+    #circle_three_bg {
         cursor: pointer;
     }
 
-    #icon_one,#icon_two,#icon_three{
+    #icon_one,
+    #icon_two,
+    #icon_three {
         opacity: 0;
         transition: all .4s ease-out;
     }
-
-
-
-    
 }
