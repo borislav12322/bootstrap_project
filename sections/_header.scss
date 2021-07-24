@@ -21,5 +21,16 @@
         line-height: 16px;
         background: #D2E1FF;
         border-radius: 2px;
+        margin-left: 44px;
+    }
+
+    &__img{
+        fill: #B6BAC7;
+        transition: all .5s ease-out;
+
+        &:hover{
+        fill: #6188FF;
+        transition: all .5s ease-out;
+        }
     }
 }
