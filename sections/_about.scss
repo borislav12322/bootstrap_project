@@ -2,6 +2,13 @@
     background-color: #FFFFFF;
     padding-top: 170px;
     padding-bottom: 172px;
+    background: url('./assets/img/about/bg-right-top.png') no-repeat 95% 20%,
+                url('./assets/img/about/bg-left.png') no-repeat 1% 50%;
+
+    @media screen and(min-width: 1600px) {
+        background: url('./assets/img/about/bg-right-top.png') no-repeat 80% 20%,
+                    url('./assets/img/about/bg-left.png') no-repeat 10% 50%;
+    }
 
     &__container.container {
         max-width: 800px;

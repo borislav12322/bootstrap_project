@@ -4,21 +4,50 @@
 
 
     @media screen and (min-width: 1200px) {
-        background-color: #F5F8FF;
         background: url(../assets/img/description/mob_bg_original.svg) no-repeat 57.7% 50%,
             url(../assets/img/description/mob_bg_original_border.svg) no-repeat 58.3% 55%,
-            url(../assets/img/description/mob_bg_original_2.svg) no-repeat 93.5% 67%, url(../assets/img/description/mob_bg_original_2_border.svg) no-repeat 96.5% 76%,
+            url(../assets/img/description/mob_bg_original_2.svg) no-repeat 93.5% 67%,
+            url(../assets/img/description/mob_bg_original_2_border.svg) no-repeat 96.5% 76%,
             url(../assets/img/description/mob_bg_original_1_border2.svg) no-repeat 106% 102%,
-            url(../assets/img/description/mob_bg_original_1.svg) no-repeat 92.9% 43%,
-            url(../assets/img/description/mob_bg_original_1_border1.svg) no-repeat 98.5% 45%,#F5F8FF
-            ;
+            url(../assets/img/description/mob_bg_original_1.svg) no-repeat 91% 43%,
+            url(../assets/img/description/mob_bg_original_1_border1.svg) no-repeat 98.5% 45%, #F5F8FF;
+    }
+
+    @media screen and (min-width: 1440px){
+        background: url(../assets/img/description/mob_bg_original.svg) no-repeat 60% 50%,
+            url(../assets/img/description/mob_bg_original_border.svg) no-repeat 60.6% 55%,
+            url(../assets/img/description/mob_bg_original_2.svg) no-repeat 93.5% 67%,
+            url(../assets/img/description/mob_bg_original_2_border.svg) no-repeat 96.5% 76%,
+            url(../assets/img/description/mob_bg_original_1_border2.svg) no-repeat 105% 102%,
+            url(../assets/img/description/mob_bg_original_1.svg) no-repeat 93% 43%,
+            url(../assets/img/description/mob_bg_original_1_border1.svg) no-repeat 98.5% 45%, #F5F8FF;
+
+    }
+    @media screen and (min-width: 1570px){
+        background: url(../assets/img/description/mob_bg_original.svg) no-repeat 65% 50%,
+            url(../assets/img/description/mob_bg_original_border.svg) no-repeat 65.8% 55%,
+            url(../assets/img/description/mob_bg_original_2.svg) no-repeat 94% 67%,
+            url(../assets/img/description/mob_bg_original_2_border.svg) no-repeat 96.5% 76%,
+            url(../assets/img/description/mob_bg_original_1_border2.svg) no-repeat 105% 102%,
+            url(../assets/img/description/mob_bg_original_1.svg) no-repeat 93% 43%,
+            url(../assets/img/description/mob_bg_original_1_border1.svg) no-repeat 98.5% 45%, #F5F8FF;
+
+    }
+
+    @media screen and (min-width: 1760px){
+        background: url(../assets/img/description/mob_bg_original.svg) no-repeat 70% 50%,
+            url(../assets/img/description/mob_bg_original_border.svg) no-repeat 71% 55%,
+            url(../assets/img/description/mob_bg_original_2.svg) no-repeat 94% 67%,
+            url(../assets/img/description/mob_bg_original_2_border.svg) no-repeat 96.5% 76%,
+            url(../assets/img/description/mob_bg_original_1_border2.svg) no-repeat 102% 102%,
+            url(../assets/img/description/mob_bg_original_1.svg) no-repeat 93% 43%,
+            url(../assets/img/description/mob_bg_original_1_border1.svg) no-repeat 98.5% 45%, #F5F8FF;
+
     }
 
 
 
 
-    // background: url(../assets/img/description/mob_bg_original.svg) no-repeat 57.7% 50%,
-    // url(../assets/img/description/mob_bg_original_border.svg) no-repeat 58.3% 55%,
 
     .container {
         padding-top: 208px;

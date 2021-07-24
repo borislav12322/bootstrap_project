@@ -1,9 +1,10 @@
 .resources {
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
     padding-top: 104px;
+    padding-bottom: 104px;
 
 
-    .container {}
+    
 
 
 
@@ -31,7 +32,7 @@
     .swiper-container {
         max-width: 958px;
         width: 100%;
-        padding-bottom: 213px;
+        
 
 
 
@@ -200,10 +201,20 @@
 
         .swiper-pagination {
 
-            bottom: 94px;
+            bottom: 10px;
         }
 
-        .swiper-button-next {}
+        .swiper-button-next, .swiper-button-prev{
+            transform: translate(-50%,-20%)!important;
+
+        }
+
+        .swiper-button-prev{
+            left: 20px;
+        }
+        .swiper-button-next{
+            right: -5px;
+        }
 
     }
 

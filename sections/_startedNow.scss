@@ -1,5 +1,10 @@
 .started{
-    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    background:linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    @media screen and (min-width: 900px) {
+        background: url(./assets/img/price/bg-left.png) no-repeat, url(./assets/img/price/bg-right.png) no-repeat 95% 100%, linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%) ; 
+    }
+
+    
     padding: 90px 0;
 
     &__title{
